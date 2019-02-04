@@ -1,0 +1,10 @@
+<form>
+ <label form="search">Search:</label>
+ <input type="string" #inputContent>
+</form>
+<button (click)="search(inputContent.value)"> Search</button>
+
+<p>
+ <app-content-card *ngFor="let item of (content5 | defaultType: 'News') ; index as i; last as e" [stuff]="item" [index]="i" [last]="e" [type]="'News'"></app-content-card>
+ <app-content-card *ngFor="let item of (content5 | defaultType: 'Story') ; index as i; last as e" [stuff]="item" [index]="i" [last]="e"[type]="'Story'"></app-content-card>
+</p>

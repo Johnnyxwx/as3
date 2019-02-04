@@ -1,0 +1,29 @@
+div.content-card {
+    border-style: solid;
+    border-width: 5px;
+    width: 200px;
+
+
+}
+
+
+div.content-card img {
+    width: 50px;
+
+}
+
+div.content-card.last {
+    border-width: 2px;
+
+
+}
+
+div.content-card.Story {
+    border-color: deepskyblue;
+
+}
+
+div.content-card.News {
+    border-color: green;
+
+}

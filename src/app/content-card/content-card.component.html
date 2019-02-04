@@ -1,0 +1,27 @@
+
+<div class="content-card" [ngClass]="{'last': last, 'News': type=='News', 'Story': type=='Story'}" >
+
+    <img src="{{stuff.imgUrl}}" (click)="console()">
+<br />
+
+  <p class="super-bold">
+    {{stuff.body}}
+  </p>
+  <p>
+  {{stuff.contentId}}
+  </p>
+  <p>
+  {{index}}
+  </p>
+<p>
+  {{stuff.author}}
+</p>
+  <p>
+    {{stuff.tags}}
+  </p>
+
+  <p>
+    {{stuff.type}}
+  </p>
+
+</div>
